@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marshy | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        /* Navbar */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: rgba(0,0,0,0.4);
+            backdrop-filter: blur(10px);
+        }
+
+            nav h1 {
+                color: #38bdf8;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin-left: 20px;
+                font-weight: bold;
+            }
+
+        /* Hero */
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+            .hero h2 {
+                font-size: 48px;
+            }
+
+            .hero span {
+                color: #38bdf8;
+            }
+
+        /* Sections */
+
+        section {
+            padding: 60px 40px;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+
+        /* Grid Cards */
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+                background: #334155;
+            }
+
+        /* Company Branding */
+
+        .company-card {
+            text-align: center;
+        }
+
+            .company-card img {
+                width: 90px;
+                margin-bottom: 15px;
+            }
+
+        /* Contact Section */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .contact-box {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-icon {
+            font-size: 28px;
+        }
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV -->
+
+    <nav>
+        <h1>Marshy</h1>
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#companies">Companies</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+
+    <div class="hero">
+        <h2>Hi, I'm <span>Marshy</span></h2>
+        <p>Game Developer • Web Developer • Bot Creator</p>
+    </div>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I'm Marshy — a developer who builds games, websites, and Discord bots.
+            I love creating fun interactive experiences and learning new tech.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>🎮 Gorilla Tag Fan Game</h3>
+                <p>Unity-based fan game with custom maps and multiplayer features.</p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 Discord Activity Bot</h3>
+                <p>Tracks user activity, stats, leaderboards, and DM usage.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Video Editor Web App</h3>
+                <p>Browser-based video editor with subtitles and export support.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COMPANIES -->
+
+    <section id="companies">
+
+        <h2 class="section-title">Companies & Brands</h2>
+
+        <div class="grid">
+
+            <div class="card company-card">
+                <img src="neo-logo.png" alt="Neo Logo">
+                <h3>🌙 Neo</h3>
+                <p>Side project brand for experimental games, tools, and ideas.</p>
+            </div>
+
+            <div class="card company-card">
+                <img src="marshcorp-logo.png" alt="MarshCorp Logo">
+                <h3>⚙️ MarshCorp</h3>
+                <p>Main brand for large-scale projects and professional releases.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="grid">
+
+            <div class="card">HTML / CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Unity (C#)</div>
+            <div class="card">Discord Bots</div>
+            <div class="card">Game Design</div>
+            <div class="card">UI Design</div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-grid">
+
+            <div class="contact-box">
+                <div class="contact-icon">📧</div>
+                <div>
+                    <strong>Email</strong><br>
+                    cascher1014@email.com
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <div class="contact-icon">💬</div>
+                <div>
+                    <strong>Discord</strong><br>
+                    marshy5533<br>
+                    mashy1018
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        © 2026 Marshy — Portfolio
+    </footer>
+
+</body>
+</html>
